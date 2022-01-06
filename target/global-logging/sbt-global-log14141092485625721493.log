@@ -1,0 +1,89 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.6.1 (Oracle Corporation Java 17.0.1)
+[debug] Load.defaultLoad until apply took 246.20656ms
+[debug]           Load.loadUnit: plugins took 51.772997ms
+[debug]           Load.loadUnit: defsScala took 0.299843ms
+[debug] [Loading] Scanning directory /Users/p51lee/IdeaProjects/nemonemo/project
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /Users/p51lee/IdeaProjects/nemonemo/project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 13.646098 ms
+[debug]               Load.resolveProject(nemonemo-build) took 29.55083ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id nemonemo-build, base: /Users/p51lee/IdeaProjects/nemonemo/project, plugins: List(<none>))) took 63.91274ms
+[debug] [Loading] Done in /Users/p51lee/IdeaProjects/nemonemo/project, returning: (nemonemo-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 85.740048ms
+[debug]           Load.loadUnit: cleanEvalClasses took 0.329332ms
+[debug]         Load.loadUnit(file:/Users/p51lee/IdeaProjects/nemonemo/project/, ...) took 143.419694ms
+[debug]       Load.apply: load took 404.537939ms
+[debug]       Load.apply: resolveProjects took 5.080058ms
+[debug]       Load.apply: finalTransforms took 46.184356ms
+[debug]       Load.apply: config.delegates took 4.895715ms
+[debug]       Load.apply: Def.make(settings)... took 243.145987ms
+[debug]       Load.apply: structureIndex took 79.853371ms
+[debug]       Load.apply: mkStreams took 1.000116ms
+[info] loading project definition from /Users/p51lee/IdeaProjects/nemonemo/project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 1847.70354ms
+[debug]     Load.loadUnit: defsScala took 0.003202ms
+[debug] [Loading] Scanning directory /Users/p51lee/IdeaProjects/nemonemo
+[debug]       Load.loadUnit: mkEval took 3.79985ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /Users/p51lee/IdeaProjects/nemonemo, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 2.049351 ms
+[info] loading settings for project nemonemo from build.sbt ...
+[debug]         Load.resolveProject(nemonemo) took 4.010247ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id nemonemo, base: /Users/p51lee/IdeaProjects/nemonemo, plugins: List(<none>))) took 6.734877ms
+[debug] [Loading] Done in /Users/p51lee/IdeaProjects/nemonemo, returning: (nemonemo)
+[debug]     Load.loadUnit: loadedProjectsRaw took 1656.487836ms
+[debug]     Load.loadUnit: cleanEvalClasses took 4.58412ms
+[debug]   Load.loadUnit(file:/Users/p51lee/IdeaProjects/nemonemo/, ...) took 3509.848815ms
+[debug] Load.apply: load took 3525.53374ms
+[debug] Load.apply: resolveProjects took 0.100538ms
+[debug] Load.apply: finalTransforms took 13.913674ms
+[debug] Load.apply: config.delegates took 0.508495ms
+[debug] Load.apply: Def.make(settings)... took 94.68176ms
+[debug] Load.apply: structureIndex took 27.812837ms
+[debug] Load.apply: mkStreams took 0.002305ms
+[info] set current project to nemonemo (in build file:/Users/p51lee/IdeaProjects/nemonemo/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(shell, None, None)
+[info] sbt server started at local:///Users/p51lee/.sbt/1.0/server/8eb17a77f53e9d68dce1/sock
+[debug] Writing bsp connection file
+[info] started sbt server
