@@ -1,1 +1,45 @@
-[0m[[0m[0mdebug[0m] [0m[0mJar uptodate: /Users/p51lee/IdeaProjects/nemonemo/target/scala-3.1.0/nemonemo_3-0.1.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /Users/p51lee/dev/nonogram-solver/target/scala-3.1.0/nemonemo_3-0.1.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	util[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/p51lee/dev/nonogram-solver/target/scala-3.1.0/classes/util[0m
+[0m[[0m[0mdebug[0m] [0m[0m	util/White.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/p51lee/dev/nonogram-solver/target/scala-3.1.0/classes/util/White.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	util/NemoPlane$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/p51lee/dev/nonogram-solver/target/scala-3.1.0/classes/util/NemoPlane$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	util/Block.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/p51lee/dev/nonogram-solver/target/scala-3.1.0/classes/util/Block.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	util/Block.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/p51lee/dev/nonogram-solver/target/scala-3.1.0/classes/util/Block.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	util/Dummy$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/p51lee/dev/nonogram-solver/target/scala-3.1.0/classes/util/Dummy$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	util/Black$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/p51lee/dev/nonogram-solver/target/scala-3.1.0/classes/util/Black$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	util/White.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/p51lee/dev/nonogram-solver/target/scala-3.1.0/classes/util/White.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	util/Dummy.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/p51lee/dev/nonogram-solver/target/scala-3.1.0/classes/util/Dummy.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	util/NemoLine.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/p51lee/dev/nonogram-solver/target/scala-3.1.0/classes/util/NemoLine.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	util/NemoLine$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/p51lee/dev/nonogram-solver/target/scala-3.1.0/classes/util/NemoLine$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	util/NemoPlane.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/p51lee/dev/nonogram-solver/target/scala-3.1.0/classes/util/NemoPlane.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	util/Black.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/p51lee/dev/nonogram-solver/target/scala-3.1.0/classes/util/Black.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	util/Black.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/p51lee/dev/nonogram-solver/target/scala-3.1.0/classes/util/Black.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	util/NemoPlane.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/p51lee/dev/nonogram-solver/target/scala-3.1.0/classes/util/NemoPlane.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	util/NemoLine.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/p51lee/dev/nonogram-solver/target/scala-3.1.0/classes/util/NemoLine.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	util/White$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/p51lee/dev/nonogram-solver/target/scala-3.1.0/classes/util/White$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	util/Dummy.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/p51lee/dev/nonogram-solver/target/scala-3.1.0/classes/util/Dummy.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Nemo$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/p51lee/dev/nonogram-solver/target/scala-3.1.0/classes/Nemo$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Nemo.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/p51lee/dev/nonogram-solver/target/scala-3.1.0/classes/Nemo.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Nemo.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/p51lee/dev/nonogram-solver/target/scala-3.1.0/classes/Nemo.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

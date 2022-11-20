@@ -6,13 +6,18 @@ class NemoLine(blockList: List[Block], info: List[Int], posses: List[List[Block]
   val possibilities: List[List[Block]] = if posses.isEmpty then preprocess() else posses
 
   def getBlockList: List[Block] = blockList
+
   def getPosses: List[List[Block]] = possibilities
+
   def getInfo: List[Int] = info
 
-  def next(): NemoLine = {
-    val newPosses = possibilities.filter( p => evaluate(p) )
-    val newBlockList = newPosses.reduce(andOp)
-    new NemoLine(newBlockList, info, newPosses)
+  def next(): Option[NemoLine] = {
+    val newPosses = possibilities.filter(p => evaluate(p))
+    if (newPosses.isEmpty)
+      None
+    else
+      val newBlockList = newPosses.reduce(andOp)
+      Some(new NemoLine(newBlockList, info, newPosses))
   }
 
   def andOp(poss1: List[Block], poss2: List[Block]): List[Block] = {
@@ -24,7 +29,7 @@ class NemoLine(blockList: List[Block], info: List[Int], posses: List[List[Block]
   }
 
   private def isValid(possibility: List[Block]): Boolean = {
-    blockList.zip(possibility).foldLeft(true)( (acc, blocks) => blocks._1 match {
+    blockList.zip(possibility).foldLeft(true)((acc, blocks) => blocks._1 match {
       case Dummy => acc
       case Black => blocks._2 match {
         case Black => acc
@@ -56,18 +61,15 @@ class NemoLine(blockList: List[Block], info: List[Int], posses: List[List[Block]
     preprocessSuppl(blockList.length, info)
   }
 
-  private def preprocessSuppl(length: Int, inf: List[Int]): List[List[Block]] = info.length match {
-    case 0 => List(List.fill(length)(White))
-    case _ => inf match {
-      case Nil => List(List.fill(length)(White))
-      case infHead :: infTail =>
-        val tailMinLength = infTail.sum + infTail.length - 1
-        val maxIndent = length - tailMinLength - infHead - 1
-        List.range(0, maxIndent+1).flatMap(indent => {
-          preprocessSuppl(length-indent-infHead, infTail).map( tail => {
-            List.fill(indent)(White) ++ List.fill(infHead)(Black) ++ tail
-          })
+  private def preprocessSuppl(length: Int, inf: List[Int]): List[List[Block]] = inf match {
+    case Nil => List(List.fill(length)(White))
+    case infHead :: infTail =>
+      val tailMinLength = infTail.sum + infTail.length - 1
+      val maxIndent = length - tailMinLength - infHead - 1
+      List.range(0, maxIndent + 1).flatMap(indent => {
+        preprocessSuppl(length - indent - infHead, infTail).map(tail => {
+          List.fill(indent)(White) ++ List.fill(infHead)(Black) ++ tail
         })
-    }
+      })
   }
 }

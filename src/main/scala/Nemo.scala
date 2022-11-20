@@ -1,6 +1,8 @@
 import scala.io.Source
 import scala.util.Using
-import util.{Block, White, Black, Dummy, NemoLine, NemoPlane}
+import util.{Black, Block, Dummy, NemoLine, NemoPlane, White}
+
+import scala.annotation.tailrec
 
 object Nemo {
   def main(args: Array[String]): Unit = {
@@ -11,14 +13,15 @@ object Nemo {
       val height = lines.tail.head.toInt
       val totInfo = lines.tail.tail
       assert(totInfo.length == width + height)
-      val horizontalInfo = totInfo.dropRight(width).map( s =>
-        s.split(" ").toList.map( x => x.toInt )
+      val horizontalInfo = totInfo.dropRight(width).map(s =>
+        s.split(" ").toList.map(x => x.toInt)
       )
-      val verticalInfo = totInfo.drop(height).map( s =>
-        s.split(" ").toList.map( x => x.toInt )
+      val verticalInfo = totInfo.drop(height).map(s =>
+        s.split(" ").toList.map(x => x.toInt)
       )
       val plane = new NemoPlane(width, height, horizontalInfo, verticalInfo)
-      solve(plane)
+      print("Solving")
+      solve(Some(plane))
     }
 
     val plane2 = new NemoPlane(
@@ -58,14 +61,19 @@ object Nemo {
         List(1)
       )
     )
-//    solve(plane2)
+    //    solve(plane2)
   }
 
-  def solve(plane: NemoPlane): Unit = {
-    println(plane)
-    println()
-    scala.io.StdIn.readLine()
-    if (plane.getMatrix.map(line => line contains Dummy).reduce(_||_))
-      solve(plane.next())
+  //  @tailrec
+  def solve(planeOpt: Option[NemoPlane]): Unit = {
+    planeOpt match
+      case Some(plane) =>
+        print(".")
+        if (plane.getMatrix.map(line => line contains Dummy).reduce(_ || _))
+          solve(plane.next())
+        else
+          println()
+          println(plane)
+      case None => println("No solution!")
   }
 }

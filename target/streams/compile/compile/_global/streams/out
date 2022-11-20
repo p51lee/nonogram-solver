@@ -1,0 +1,6 @@
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: /Users/p51lee/dev/nonogram-solver/src/main/scala/Nemo.scala:73:11 ----[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m73 |[0m      solve(plane.next())[0m
+[0m[[0m[31merror[0m] [0m[0m   |      [31m^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |      Cannot rewrite recursive call: it is not in tail position[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
